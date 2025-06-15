@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Details - GigMitra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <header class="bg-midnight-blue border-b border-cyan-blue py-4">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-0"
+      >
+        <div class="flex items-center">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-10 mr-2"
+          />
+          <span class="text-2xl font-bold text-cyan-blue">GigMitra</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Find Jobs</a
+          >
+          <a
+            href="job_categories.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Job Categories</a
+          >
+          <a
+            href="feed.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue relative"
+          >
+            Feed
+            <span
+              class="bg-electric-blue text-white text-xs px-1 rounded absolute -top-2 -right-3"
+              >New</span
+            >
+          </a>
+          <a href="upload.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Upload Resume</a
+          >
+          <a href="cs.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Customer Service</a
+          >
+        </nav>
+        <div class="flex items-center space-x-2">
+          <button
+            class="bg-white border border-cyan-blue text-cyan-blue px-4 py-2 rounded hover:bg-azure-blue hover:text-white md:block hidden"
+          >
+            <a href="signin.html">Sign Up</a>
+          </button>
+          <button
+            class="bg-electric-blue text-white px-4 py-2 rounded hover:bg-azure-blue"
+          >
+            <a href="login.html">Sign In</a>
+          </button>
+          <a
+            href="employer-dashboard.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue ml-2"
+            >For Employer</a
+          >
+          <button
+            class="md:hidden text-cyan-blue hover:text-vivid-sky-blue focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-6">
+        <ol class="flex items-center space-x-2 text-sm">
+          <li>
+            <a href="index.html" class="text-cyan-blue hover:text-vivid-sky-blue">Home</a>
+          </li>
+          <li class="text-gray-500">/</li>
+          <li>
+            <a href="job_categories.html" class="text-cyan-blue hover:text-vivid-sky-blue">Find Jobs</a>
+          </li>
+          <li class="text-gray-500">/</li>
+          <li class="text-gray-700">Job Details</li>
+        </ol>
+      </nav>
+
+      <!-- Job Header -->
+      <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+          <div class="flex-1">
+            <div class="flex items-center mb-4">
+              <img
+                id="company-logo"
+                src="images/company3.png"
+                alt="Company Logo"
+                class="h-16 w-16 rounded-lg mr-4"
+              />
+              <div>
+                <h1 id="job-title" class="text-3xl font-bold text-midnight-blue mb-2">
+                  Job Title
+                </h1>
+                <p id="company-location" class="text-gray-600 text-lg">
+                  Company • Location
+                </p>
+                <p id="job-salary" class="text-green-600 font-semibold text-xl mt-1">
+                  Salary Range
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span id="job-type" class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+                Full Time
+              </span>
+              <span id="job-level" class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">
+                Mid Level
+              </span>
+              <span id="job-mode" class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">
+                On-Site
+              </span>
+              <span id="job-experience" class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">
+                1-2 years experience
+              </span>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-3 lg:ml-6">
+            <button
+              id="quick-apply-btn"
+              class="bg-electric-blue text-white px-6 py-3 rounded-lg hover:bg-azure-blue transition-colors duration-200 font-semibold"
+            >
+              Quick Apply
+            </button>
+            <button
+              class="bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-600 transition-colors duration-200 font-semibold"
+            >
+              Save Job
+            </button>
+          </div>
+        </div>
+        <div class="mt-4 pt-4 border-t border-gray-200">
+          <p id="job-expires" class="text-gray-500 text-sm">
+            Job Expires: 25 days, 12 hours remaining
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Main Content -->
+        <div class="lg:col-span-2">
+          <!-- Job Description -->
+          <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+            <h2 class="text-2xl font-bold text-midnight-blue mb-4">Job Description</h2>
+            <p id="job-description" class="text-gray-700 leading-relaxed mb-6">
+              Job description will be loaded here...
+            </p>
+
+            <h3 class="text-xl font-semibold text-midnight-blue mb-3">Key Responsibilities:</h3>
+            <ul id="job-responsibilities" class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+              <!-- Responsibilities will be loaded here -->
+            </ul>
+
+            <h3 class="text-xl font-semibold text-midnight-blue mb-3">Required Qualifications:</h3>
+            <ul id="job-requirements" class="list-disc list-inside text-gray-700 space-y-2">
+              <!-- Requirements will be loaded here -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <!-- Company Info -->
+          <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+            <h3 id="company-name" class="text-xl font-bold text-midnight-blue mb-4">About Company</h3>
+            
+            <div class="space-y-3">
+              <div>
+                <span class="text-gray-600">Industry:</span>
+                <p id="company-industry" class="font-semibold text-midnight-blue">Technology</p>
+              </div>
+              
+              <div>
+                <span class="text-gray-600">Company Size:</span>
+                <p id="company-size" class="font-semibold text-midnight-blue">201-500 employees</p>
+              </div>
+              
+              <div>
+                <span class="text-gray-600">Founded:</span>
+                <p id="company-founded" class="font-semibold text-midnight-blue">2009</p>
+              </div>
+              
+              <div>
+                <span class="text-gray-600">Website:</span>
+                <a id="company-website" href="#" class="text-cyan-blue hover:text-vivid-sky-blue font-semibold">
+                  company.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Similar Jobs -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="text-xl font-bold text-midnight-blue mb-4">Similar Jobs</h3>
+            <div id="similar-jobs" class="space-y-4">
+              <!-- Similar jobs will be loaded here -->
+            </div>
+          </div>
+
+          <!-- Application Deadline -->
+          <div class="bg-red-50 border border-red-200 rounded-xl p-6 mt-6">
+            <h3 class="text-lg font-bold text-red-800 mb-2">Application Deadline</h3>
+            <p id="deadline-text" class="text-red-700 mb-3">
+              This job expires in 25 days, 12 hours
+            </p>
+            <p class="text-red-600 text-sm">Apply now to secure your spot!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-midnight-blue text-white py-8 mt-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Jobseekers</h3>
+          <a
+            href="find-jobs.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Find Jobs</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="upload.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Upload Resume</a
+          >
+          <a
+            href="jobseeker-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Jobseeker Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Employers</h3>
+          <a
+            href="post-job.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Post a Job</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="employer-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Employer Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">Company</h3>
+          <a
+            href="why-gigmitra.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Why GigMitra?</a
+          >
+          <a
+            href="blog.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Blog</a
+          >
+          <a
+            href="about.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >About GigMitra</a
+          >
+          <a
+            href="career.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Career</a
+          >
+          <a
+            href="contact-us.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Contact Us</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">
+            Helpful Resources
+          </h3>
+          <a
+            href="terms.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Terms & Conditions</a
+          >
+          <a
+            href="privacy.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-12 mb-2"
+          />
+          <p class="text-center md:text-left text-sm">
+            Bridging Hiring Gaps
+          </p>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 mt-6 pt-6 border-t border-gray-700">
+        <p class="text-center text-sm">
+          Copyright © 2025 GigMitra Pvt. Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/shared-data.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get job ID from URL parameter
+        const jobId = getUrlParameter('jobId');
+        
+        if (jobId) {
+          const job = getJobById(jobId);
+          
+          if (job) {
+            // Update job details
+            document.getElementById('job-title').textContent = job.title;
+            document.getElementById('company-location').textContent = `${job.company} • ${job.location}`;
+            document.getElementById('job-salary').textContent = `${job.salary} per month`;
+            document.getElementById('job-type').textContent = job.type.replace('-', ' ').toUpperCase();
+            document.getElementById('job-experience').textContent = `${job.experience} experience`;
+            document.getElementById('job-expires').textContent = `Job Expires: ${job.expires} remaining`;
+            document.getElementById('job-description').textContent = job.description;
+            document.getElementById('deadline-text').textContent = `This job expires in ${job.expires}`;
+            
+            // Update company info
+            document.getElementById('company-name').textContent = `About ${job.company}`;
+            document.getElementById('company-industry').textContent = job.companyInfo.industry;
+            document.getElementById('company-size').textContent = job.companyInfo.size;
+            document.getElementById('company-founded').textContent = job.companyInfo.founded;
+            document.getElementById('company-website').textContent = job.companyInfo.website;
+            document.getElementById('company-website').href = `https://${job.companyInfo.website}`;
+            
+            // Update responsibilities
+            const responsibilitiesList = document.getElementById('job-responsibilities');
+            responsibilitiesList.innerHTML = '';
+            job.responsibilities.forEach(responsibility => {
+              const li = document.createElement('li');
+              li.textContent = responsibility;
+              responsibilitiesList.appendChild(li);
+            });
+            
+            // Update requirements
+            const requirementsList = document.getElementById('job-requirements');
+            requirementsList.innerHTML = '';
+            job.requirements.forEach(requirement => {
+              const li = document.createElement('li');
+              li.textContent = requirement;
+              requirementsList.appendChild(li);
+            });
+            
+            // Update Quick Apply button
+            document.getElementById('quick-apply-btn').onclick = function() {
+              window.location.href = `quick-apply.html?jobId=${job.id}`;
+            };
+            
+            // Load similar jobs
+            const similarJobs = jobsData.filter(j => j.id !== job.id && j.industry === job.industry).slice(0, 3);
+            const similarJobsContainer = document.getElementById('similar-jobs');
+            similarJobsContainer.innerHTML = '';
+            
+            similarJobs.forEach(similarJob => {
+              const jobDiv = document.createElement('div');
+              jobDiv.className = 'border-b border-gray-200 pb-3 last:border-b-0';
+              jobDiv.innerHTML = `
+                <h4 class="font-semibold text-midnight-blue">${similarJob.title}</h4>
+                <p class="text-gray-600 text-sm">${similarJob.company} • ${similarJob.location}</p>
+                <p class="text-green-600 text-sm font-medium">${similarJob.salary}</p>
+              `;
+              similarJobsContainer.appendChild(jobDiv);
+            });
+          } else {
+            // Job not found
+            document.getElementById('job-title').textContent = 'Job Not Found';
+            document.getElementById('company-location').textContent = 'Please check the job ID and try again.';
+          }
+        } else {
+          // No job ID provided
+          document.getElementById('job-title').textContent = 'No Job Selected';
+          document.getElementById('company-location').textContent = 'Please select a job to view details.';
+        }
+      });
+    </script>
+  </body>
+</html>
+

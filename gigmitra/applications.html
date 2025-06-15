@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applications - GigMitra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <header class="bg-midnight-blue border-b border-cyan-blue py-4">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-0"
+      >
+        <div class="flex items-center">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-10 mr-2"
+          />
+          <span class="text-2xl font-bold text-cyan-blue">GigMitra</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a
+            href="employer-dashboard.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Dashboard</a
+          >
+          <a
+            href="post-job.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Post Job</a
+          >
+          <a
+            href="applications.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Applications</a
+          >
+        </nav>
+        <div class="flex items-center space-x-2">
+          <button
+            class="bg-white border border-cyan-blue text-cyan-blue px-4 py-2 rounded hover:bg-azure-blue hover:text-white md:block hidden"
+          >
+            <a href="signin.html">Sign Up</a>
+          </button>
+          <button
+            class="bg-electric-blue text-white px-4 py-2 rounded hover:bg-azure-blue"
+          >
+            <a href="login.html">Sign In</a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+      <section class="mb-8">
+        <h1 class="text-3xl font-bold text-midnight-blue mb-4">
+          Job Applications
+        </h1>
+        <p class="text-gray-600">
+          Manage and review applications for your posted jobs
+        </p>
+      </section>
+
+      <section class="bg-white p-6 rounded-lg shadow-lg mb-8">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-xl font-semibold text-midnight-blue">
+            Filter Applications
+          </h2>
+          <button
+            class="bg-electric-blue text-white px-4 py-2 rounded-lg hover:bg-azure-blue"
+          >
+            Export Data
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <select
+            class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+          >
+            <option>All Jobs</option>
+            <option>Software Developer</option>
+            <option>Marketing Manager</option>
+            <option>Sales Executive</option>
+          </select>
+
+          <select
+            class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+          >
+            <option>All Status</option>
+            <option>New</option>
+            <option>Reviewed</option>
+            <option>Shortlisted</option>
+            <option>Rejected</option>
+          </select>
+
+          <input
+            type="date"
+            class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+            placeholder="From Date"
+          />
+
+          <button
+            class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue"
+          >
+            Apply Filters
+          </button>
+        </div>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-lg">
+        <div class="p-6 border-b border-gray-200">
+          <h2 class="text-xl font-semibold text-midnight-blue">
+            Recent Applications (24)
+          </h2>
+        </div>
+
+        <div class="divide-y divide-gray-200">
+          <div class="p-6 hover:bg-gray-50">
+            <div class="flex justify-between items-start">
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-midnight-blue mb-2">
+                  Rajesh Kumar Sharma
+                </h3>
+                <p class="text-gray-600 mb-1">
+                  Applied for: Software Developer
+                </p>
+                <p class="text-gray-600 mb-1">Experience: 3 years</p>
+                <p class="text-gray-600 mb-1">Location: Kathmandu, Nepal</p>
+                <p class="text-sm text-gray-500">Applied: 2 hours ago</p>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span
+                  class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-sm"
+                >
+                  New
+                </span>
+                <button
+                  class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue"
+                >
+                  View Resume
+                </button>
+                <button
+                  class="bg-electric-blue text-white px-4 py-2 rounded-lg hover:bg-azure-blue"
+                >
+                  Shortlist
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 hover:bg-gray-50">
+            <div class="flex justify-between items-start">
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-midnight-blue mb-2">
+                  Priya Thapa
+                </h3>
+                <p class="text-gray-600 mb-1">Applied for: Marketing Manager</p>
+                <p class="text-gray-600 mb-1">Experience: 5 years</p>
+                <p class="text-gray-600 mb-1">Location: Lalitpur, Nepal</p>
+                <p class="text-sm text-gray-500">Applied: 1 day ago</p>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span
+                  class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm"
+                >
+                  Reviewed
+                </span>
+                <button
+                  class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue"
+                >
+                  View Resume
+                </button>
+                <button
+                  class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+                >
+                  Interview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 hover:bg-gray-50">
+            <div class="flex justify-between items-start">
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-midnight-blue mb-2">
+                  Amit Gurung
+                </h3>
+                <p class="text-gray-600 mb-1">Applied for: Sales Executive</p>
+                <p class="text-gray-600 mb-1">Experience: 2 years</p>
+                <p class="text-gray-600 mb-1">Location: Pokhara, Nepal</p>
+                <p class="text-sm text-gray-500">Applied: 2 days ago</p>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span
+                  class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-sm"
+                >
+                  Shortlisted
+                </span>
+                <button
+                  class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue"
+                >
+                  View Resume
+                </button>
+                <button
+                  class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+                >
+                  Schedule Interview
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 border-t border-gray-200">
+          <div class="flex justify-between items-center">
+            <p class="text-gray-600">Showing 3 of 24 applications</p>
+            <div class="flex space-x-2">
+              <button
+                class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400"
+              >
+                Previous
+              </button>
+              <button
+                class="bg-electric-blue text-white px-4 py-2 rounded-lg hover:bg-azure-blue"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-midnight-blue text-white py-8 mt-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Jobseekers</h3>
+          <a
+            href="find-jobs.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Find Jobs</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="upload.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Upload Resume</a
+          >
+          <a
+            href="jobseeker-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Jobseeker Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Employers</h3>
+          <a
+            href="post-job.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Post a Job</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="employer-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Employer Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">Company</h3>
+          <a
+            href="why-gigmitra.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Why GigMitra?</a
+          >
+          <a
+            href="blog.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Blog</a
+          >
+          <a
+            href="about.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >About GigMitra</a
+          >
+          <a
+            href="career.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Career</a
+          >
+          <a
+            href="contact-us.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Contact Us</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">
+            Helpful Resources
+          </h3>
+          <a
+            href="terms.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Terms & Conditions</a
+          >
+          <a
+            href="privacy.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-12 mb-2"
+          />
+          <p class="text-center md:text-left text-sm">
+            Bridging Hiring Gaps
+          </p>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 mt-6 pt-6 border-t border-gray-700">
+        <p class="text-center text-sm">
+          Copyright © 2025 GigMitra Pvt. Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Add any interactive functionality here
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post a Job - GigMitra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <header class="bg-midnight-blue border-b border-cyan-blue py-4">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-0"
+      >
+        <div class="flex items-center">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-10 mr-2"
+          />
+          <span class="text-2xl font-bold text-cyan-blue">GigMitra</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Find Jobs</a
+          >
+          <a
+            href="job_categories.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Job Categories</a
+          >
+          <a
+            href="feed.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue relative"
+            >Feed
+            <span
+              class="bg-electric-blue text-white text-xs px-1 rounded absolute -top-2 -right-3"
+              >New</span
+            ></a
+          >
+          <a href="upload.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Upload Resume</a
+          >
+          <a href="cs.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Customer Service</a
+          >
+        </nav>
+        <div class="flex items-center space-x-2">
+          <button
+            class="bg-white border border-cyan-blue text-cyan-blue px-4 py-2 rounded hover:bg-azure-blue hover:text-white md:block hidden"
+          >
+            <a href="signin.html">Sign Up</a>
+          </button>
+          <button
+            class="bg-electric-blue text-white px-4 py-2 rounded hover:bg-azure-blue"
+          >
+            <a href="login.html">Sign In</a>
+          </button>
+          <a
+            href="employer-dashboard.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue ml-2"
+            >For Employer</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+      <section class="text-center py-10">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-midnight-blue">
+          Post a Job
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+          Find the perfect candidates for your open positions
+        </p>
+      </section>
+
+      <section class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-gray-700 text-sm font-bold mb-2">
+                Job Title *
+              </label>
+              <input
+                type="text"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                placeholder="e.g. Software Developer"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="block text-gray-700 text-sm font-bold mb-2">
+                Company Name *
+              </label>
+              <input
+                type="text"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                placeholder="Enter company name"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="block text-gray-700 text-sm font-bold mb-2">
+                Job Category *
+              </label>
+              <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue" required>
+                <option value="">Select category</option>
+                <option>IT & Technology</option>
+                <option>Banking & Finance</option>
+                <option>Healthcare</option>
+                <option>Education</option>
+                <option>Marketing & Sales</option>
+                <option>Engineering</option>
+                <option>Human Resources</option>
+                <option>Customer Service</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-gray-700 text-sm font-bold mb-2">
+                Job Type *
+              </label>
+              <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue" required>
+                <option value="">Select job type</option>
+                <option>Full Time</option>
+                <option>Part Time</option>
+                <option>Contract</option>
+                <option>Internship</option>
+                <option>Freelance</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-gray-700 text-sm font-bold mb-2">
+                Experience Level *
+              </label>
+              <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue" required>
+                <option value="">Select experience level</option>
+                <option>Entry Level</option>
+                <option>Mid Level</option>
+                <option>Senior Level</option>
+                <option>Executive</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-gray-700 text-sm font-bold mb-2">
+                Location *
+              </label>
+              <input
+                type="text"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                placeholder="e.g. Kathmandu, Nepal"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="block text-gray-700 text-sm font-bold mb-2">
+                Salary Range
+              </label>
+              <div class="flex space-x-2">
+                <input
+                  type="number"
+                  class="w-1/2 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                  placeholder="Min (NPR)"
+                />
+                <input
+                  type="number"
+                  class="w-1/2 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                  placeholder="Max (NPR)"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-gray-700 text-sm font-bold mb-2">
+                Application Deadline
+              </label>
+              <input
+                type="date"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-gray-700 text-sm font-bold mb-2">
+              Job Description *
+            </label>
+            <textarea
+              rows="6"
+              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+              placeholder="Describe the job responsibilities, requirements, and qualifications..."
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <label class="block text-gray-700 text-sm font-bold mb-2">
+              Required Skills (comma separated)
+            </label>
+            <input
+              type="text"
+              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+              placeholder="e.g. JavaScript, React, Node.js, Python"
+            />
+          </div>
+
+          <div>
+            <label class="block text-gray-700 text-sm font-bold mb-2">
+              Benefits & Perks
+            </label>
+            <textarea
+              rows="3"
+              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+              placeholder="List the benefits and perks offered with this position..."
+            ></textarea>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-gray-700 text-sm font-bold mb-2">
+                Contact Email *
+              </label>
+              <input
+                type="email"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                placeholder="hr@company.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="block text-gray-700 text-sm font-bold mb-2">
+                Contact Phone
+              </label>
+              <input
+                type="tel"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                placeholder="+977-1-XXXXXXX"
+              />
+            </div>
+          </div>
+
+          <div class="bg-cyan-50 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold text-midnight-blue mb-2">
+              Posting Options
+            </h3>
+            <div class="space-y-2">
+              <label class="flex items-center">
+                <input type="checkbox" class="mr-2" />
+                <span class="text-gray-700">Feature this job (Additional NPR 2,000)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" class="mr-2" />
+                <span class="text-gray-700">Urgent hiring badge (Additional NPR 1,000)</span>
+              </label>
+              <label class="flex items-center">
+                <input type="checkbox" class="mr-2" />
+                <span class="text-gray-700">Send to matching candidates via email</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <input
+              type="checkbox"
+              class="mr-2"
+              required
+            />
+            <label class="text-sm text-gray-700">
+              I agree to the <a href="terms.html" class="text-cyan-blue hover:text-vivid-sky-blue">Terms & Conditions</a> 
+              and <a href="privacy.html" class="text-cyan-blue hover:text-vivid-sky-blue">Privacy Policy</a>
+            </label>
+          </div>
+
+          <div class="flex space-x-4">
+            <button
+              type="button"
+              class="flex-1 bg-gray-300 text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-400 transition-colors duration-200"
+            >
+              Save as Draft
+            </button>
+            <button
+              type="submit"
+              class="flex-1 bg-electric-blue text-white py-3 px-4 rounded-lg hover:bg-azure-blue transition-colors duration-200 text-lg font-semibold"
+            >
+              Post Job (NPR 5,000)
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="mt-12 bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-midnight-blue mb-6 text-center">
+          Why Post Jobs on GigMitra?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="text-4xl text-cyan-blue mb-4">🎯</div>
+            <h3 class="text-lg font-semibold text-midnight-blue mb-2">
+              Targeted Reach
+            </h3>
+            <p class="text-gray-600">
+              Reach qualified candidates actively looking for opportunities in Nepal
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl text-cyan-blue mb-4">⚡</div>
+            <h3 class="text-lg font-semibold text-midnight-blue mb-2">
+              Quick Results
+            </h3>
+            <p class="text-gray-600">
+              Start receiving applications within hours of posting your job
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl text-cyan-blue mb-4">💰</div>
+            <h3 class="text-lg font-semibold text-midnight-blue mb-2">
+              Cost Effective
+            </h3>
+            <p class="text-gray-600">
+              Affordable pricing with no hidden fees or long-term commitments
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+   <footer class="bg-midnight-blue text-white py-8 mt-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Jobseekers</h3>
+          <a
+            href="find-jobs.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Find Jobs</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="upload.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Upload Resume</a
+          >
+          <a
+            href="jobseeker-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Jobseeker Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Employers</h3>
+          <a
+            href="post-job.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Post a Job</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="employer-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Employer Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">Company</h3>
+          <a
+            href="why-gigmitra.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Why GigMitra?</a
+          >
+          <a
+            href="blog.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Blog</a
+          >
+          <a
+            href="about.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >About GigMitra</a
+          >
+          <a
+            href="career.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Career</a
+          >
+          <a
+            href="contact-us.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Contact Us</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">
+            Helpful Resources
+          </h3>
+          <a
+            href="terms.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Terms & Conditions</a
+          >
+          <a
+            href="privacy.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-12 mb-2"
+          />
+          <p class="text-center md:text-left text-sm">
+            Bridging Hiring Gaps
+          </p>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 mt-6 pt-6 border-t border-gray-700">
+        <p class="text-center text-sm">
+          Copyright © 2025 GigMitra Pvt. Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Add form validation and interactivity here
+      });
+    </script>
+  </body>
+</html>
+

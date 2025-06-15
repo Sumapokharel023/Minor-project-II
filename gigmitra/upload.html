@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GigMitra - Upload Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <header class="bg-midnight-blue border-b border-cyan-blue py-4">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-0"
+      >
+        <div class="flex items-center">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-10 mr-2"
+          />
+          <span class="text-2xl font-bold text-cyan-blue">GigMitra</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Find Jobs</a
+          >
+          <a
+            href="job_categories.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Job Categories</a
+          >
+          <a
+            href="feed.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue relative"
+            >Feed
+            <span
+              class="bg-electric-blue text-white text-xs px-1 rounded absolute -top-2 -right-3"
+              >New</span
+            ></a
+          >
+          <a
+            href="upload.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue font-bold"
+            >Upload Resume</a
+          >
+          <a href="cs.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Customer Service</a
+          >
+        </nav>
+        <div class="flex items-center space-x-2">
+          <button
+            class="bg-white border border-cyan-blue text-cyan-blue px-4 py-2 rounded hover:bg-azure-blue hover:text-white md:block hidden"
+          >
+            <a href="signin.html">Sign Up</a>
+          </button>
+          <button
+            class="bg-electric-blue text-white px-4 py-2 rounded hover:bg-azure-blue"
+          >
+            <a href="login.html">Sign In</a>
+          </button>
+          <a
+            href="employer-dashboard.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue ml-2"
+            >For Employer</a
+          >
+          <button
+            class="md:hidden text-cyan-blue hover:text-vivid-sky-blue focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+      <section class="upload-hero text-center py-10">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Upload Your <span class="text-blue-500">Resume</span>
+        </h1>
+        <p class="text-gray-600 mb-6">
+          Share your professional profile with top employers in Nepal. Upload
+          your resume and let opportunities find you.
+        </p>
+      </section>
+
+      <section class="upload-form-section">
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <form id="resume-upload-form" class="space-y-6">
+              <!-- Personal Information Section -->
+              <div class="border-b border-gray-200 pb-6">
+                <h2 class="text-2xl font-semibold text-midnight-blue mb-4">
+                  Personal Information
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      for="first-name"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      First Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      name="first-name"
+                      required
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                      placeholder="Enter your first name"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="last-name"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Last Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                      required
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                      placeholder="Enter your last name"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="phone"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                      placeholder="Enter your phone number"
+                    />
+                  </div>
+                  <div class="md:col-span-2">
+                    <label
+                      for="address"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Address
+                    </label>
+                    <input
+                      type="text"
+                      id="address"
+                      name="address"
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                      placeholder="Enter your address"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Professional Information Section -->
+              <div class="border-b border-gray-200 pb-6">
+                <h2 class="text-2xl font-semibold text-midnight-blue mb-4">
+                  Professional Information
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      for="job-title"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Current/Desired Job Title *
+                    </label>
+                    <input
+                      type="text"
+                      id="job-title"
+                      name="job-title"
+                      required
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                      placeholder="e.g., Software Engineer, Marketing Manager"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="experience"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Years of Experience *
+                    </label>
+                    <select
+                      id="experience"
+                      name="experience"
+                      required
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                    >
+                      <option value="">Select experience level</option>
+                      <option value="0-1">0-1 years (Entry Level)</option>
+                      <option value="1-3">1-3 years</option>
+                      <option value="3-5">3-5 years</option>
+                      <option value="5-10">5-10 years</option>
+                      <option value="10+">10+ years (Senior Level)</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      for="industry"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Industry *
+                    </label>
+                    <select
+                      id="industry"
+                      name="industry"
+                      required
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                    >
+                      <option value="">Select industry</option>
+                      <option value="technology">Technology</option>
+                      <option value="finance">Finance & Banking</option>
+                      <option value="tourism">Tourism & Hospitality</option>
+                      <option value="aviation">Aviation</option>
+                      <option value="construction">Construction</option>
+                      <option value="automotive">Automotive</option>
+                      <option value="healthcare">Healthcare</option>
+                      <option value="education">Education</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      for="salary-expectation"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Salary Expectation (NPR)
+                    </label>
+                    <select
+                      id="salary-expectation"
+                      name="salary-expectation"
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                    >
+                      <option value="">Select salary range</option>
+                      <option value="20k-30k">NPR 20K - 30K</option>
+                      <option value="30k-50k">NPR 30K - 50K</option>
+                      <option value="50k-80k">NPR 50K - 80K</option>
+                      <option value="80k-120k">NPR 80K - 120K</option>
+                      <option value="120k+">NPR 120K+</option>
+                      <option value="negotiable">Negotiable</option>
+                    </select>
+                  </div>
+                  <div class="md:col-span-2">
+                    <label
+                      for="skills"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Key Skills *
+                    </label>
+                    <textarea
+                      id="skills"
+                      name="skills"
+                      required
+                      rows="3"
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                      placeholder="List your key skills separated by commas (e.g., JavaScript, React, Node.js, Project Management)"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Resume Upload Section -->
+              <div class="border-b border-gray-200 pb-6">
+                <h2 class="text-2xl font-semibold text-midnight-blue mb-4">
+                  Resume Upload
+                </h2>
+                <div class="space-y-4">
+                  <div>
+                    <label
+                      for="resume-file"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Upload Resume *
+                    </label>
+                    <div
+                      class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-cyan-blue transition-colors"
+                    >
+                      <input
+                        type="file"
+                        id="resume-file"
+                        name="resume-file"
+                        accept=".pdf,.doc,.docx"
+                        required
+                        class="hidden"
+                      />
+                      <label for="resume-file" class="cursor-pointer">
+                        <div class="text-gray-600">
+                          <svg
+                            class="mx-auto h-12 w-12 text-gray-400"
+                            stroke="currentColor"
+                            fill="none"
+                            viewBox="0 0 48 48"
+                          >
+                            <path
+                              d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <p class="mt-2 text-sm">
+                            <span class="font-medium text-cyan-blue"
+                              >Click to upload</span
+                            >
+                            or drag and drop
+                          </p>
+                          <p class="text-xs text-gray-500">
+                            PDF, DOC, DOCX up to 10MB
+                          </p>
+                        </div>
+                      </label>
+                    </div>
+                    <div
+                      id="file-info"
+                      class="mt-2 text-sm text-gray-600 hidden"
+                    ></div>
+                  </div>
+
+                  <div>
+                    <label
+                      for="cover-letter"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Cover Letter (Optional)
+                    </label>
+                    <textarea
+                      id="cover-letter"
+                      name="cover-letter"
+                      rows="5"
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                      placeholder="Write a brief cover letter to introduce yourself to potential employers..."
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Preferences Section -->
+              <div class="pb-6">
+                <h2 class="text-2xl font-semibold text-midnight-blue mb-4">
+                  Job Preferences
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      for="job-type-pref"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Preferred Job Type
+                    </label>
+                    <select
+                      id="job-type-pref"
+                      name="job-type-pref"
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                    >
+                      <option value="">Select job type</option>
+                      <option value="full-time">Full Time</option>
+                      <option value="part-time">Part Time</option>
+                      <option value="freelance">Freelance</option>
+                      <option value="contract">Contract</option>
+                      <option value="internship">Internship</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      for="work-location"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                      Preferred Work Location
+                    </label>
+                    <select
+                      id="work-location"
+                      name="work-location"
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                    >
+                      <option value="">Select location</option>
+                      <option value="kathmandu">Kathmandu</option>
+                      <option value="lalitpur">Lalitpur</option>
+                      <option value="bhaktapur">Bhaktapur</option>
+                      <option value="pokhara">Pokhara</option>
+                      <option value="remote">Remote</option>
+                      <option value="hybrid">Hybrid</option>
+                      <option value="anywhere">Anywhere in Nepal</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="mt-6">
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="job-alerts"
+                      name="job-alerts"
+                      class="h-4 w-4 text-cyan-blue focus:ring-cyan-blue border-gray-300 rounded"
+                    />
+                    <span class="ml-2 text-sm text-gray-700">
+                      Send me email alerts for matching job opportunities
+                    </span>
+                  </label>
+                </div>
+
+                <div class="mt-4">
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="terms-agreement"
+                      name="terms-agreement"
+                      required
+                      class="h-4 w-4 text-cyan-blue focus:ring-cyan-blue border-gray-300 rounded"
+                    />
+                    <span class="ml-2 text-sm text-gray-700">
+                      I agree to the
+                      <a
+                        href="terms.html"
+                        class="text-cyan-blue hover:text-vivid-sky-blue"
+                        >Terms & Conditions</a
+                      >
+                      and
+                      <a
+                        href="privacy.html"
+                        class="text-cyan-blue hover:text-vivid-sky-blue"
+                        >Privacy Policy</a
+                      >
+                      *
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="bg-electric-blue text-white px-8 py-3 rounded-lg hover:bg-azure-blue transition-colors duration-200 font-semibold"
+                >
+                  Upload Resume & Create Profile
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="benefits-section mt-12 py-8">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-midnight-blue text-center mb-8">
+            Why Upload Your Resume to GigMitra?
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center p-6 bg-white rounded-xl shadow-lg">
+              <div
+                class="bg-cyan-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-midnight-blue mb-2">
+                Get Discovered
+              </h3>
+              <p class="text-gray-600">
+                Top employers actively search our database for qualified
+                candidates like you.
+              </p>
+            </div>
+            <div class="text-center p-6 bg-white rounded-xl shadow-lg">
+              <div
+                class="bg-cyan-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-midnight-blue mb-2">
+                Quick Apply
+              </h3>
+              <p class="text-gray-600">
+                Apply to multiple jobs with just one click using your uploaded
+                profile.
+              </p>
+            </div>
+            <div class="text-center p-6 bg-white rounded-xl shadow-lg">
+              <div
+                class="bg-cyan-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 17h5l-5 5v-5zM4 19h6v-6H4v6zM16 3h5v5h-5V3zM4 3h6v6H4V3z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-midnight-blue mb-2">
+                Smart Matching
+              </h3>
+              <p class="text-gray-600">
+                Receive personalized job recommendations based on your skills
+                and preferences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-midnight-blue text-white py-8 mt-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Jobseekers</h3>
+          <a
+            href="find-jobs.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Find Jobs</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="upload.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Upload Resume</a
+          >
+          <a
+            href="jobseeker-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Jobseeker Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Employers</h3>
+          <a
+            href="post-job.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Post a Job</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="employer-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Employer Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">Company</h3>
+          <a
+            href="why-gigmitra.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Why GigMitra?</a
+          >
+          <a
+            href="blog.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Blog</a
+          >
+          <a
+            href="about.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >About GigMitra</a
+          >
+          <a
+            href="career.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Career</a
+          >
+          <a
+            href="contact-us.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Contact Us</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">
+            Helpful Resources
+          </h3>
+          <a
+            href="terms.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Terms & Conditions</a
+          >
+          <a
+            href="privacy.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-12 mb-2"
+          />
+          <p class="text-center md:text-left text-sm">
+            Bridging Hiring Gaps
+          </p>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 mt-6 pt-6 border-t border-gray-700">
+        <p class="text-center text-sm">
+          Copyright © 2025 GigMitra Pvt. Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/upload.js"></script>
+  </body>
+</html>

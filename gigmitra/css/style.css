@@ -1,0 +1,187 @@
+:root {
+  --cyan-blue: #00bfff;
+  --vivid-sky-blue: #00cfff;
+  --azure-blue: #0099ff;
+  --midnight-blue: #000a33;
+  --electric-blue: #3333ff;
+}
+
+.bg-midnight-blue {
+  background-color: var(--midnight-blue);
+}
+
+.bg-cyan-blue {
+  background-color: var(--cyan-blue);
+}
+
+.bg-vivid-sky-blue {
+  background-color: var(--vivid-sky-blue);
+}
+
+.bg-azure-blue {
+  background-color: var(--azure-blue);
+}
+
+.bg-electric-blue {
+  background-color: var(--electric-blue);
+}
+
+.text-cyan-blue {
+  color: var(--cyan-blue);
+}
+
+.text-vivid-sky-blue {
+  color: var(--vivid-sky-blue);
+}
+
+.text-midnight-blue {
+  color: var(--midnight-blue);
+}
+
+.border-cyan-blue {
+  border-color: var(--cyan-blue);
+}
+
+.hover\:bg-vivid-sky-blue:hover {
+  background-color: var(--vivid-sky-blue);
+}
+
+.hover\:bg-azure-blue:hover {
+  background-color: var(--azure-blue);
+}
+
+.job-card, .category-card, .company-card, .testimonial-card {
+  transition: all 0.3s ease;
+}
+
+.job-card:hover, .category-card:hover, .company-card:hover, .testimonial-card:hover {
+  transform: translateY(-4px);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a.new {
+    position: relative;
+}
+
+.nav-links a.new span {
+    background-color: #ff4500;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+}
+
+.auth-buttons button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-up {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.sign-in {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.employer-link {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #e6ffe6;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo-img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+}
+
