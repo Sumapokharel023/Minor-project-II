@@ -34,16 +34,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const action = this.textContent.trim();
             switch(action) {
                 case 'Post New Job':
-                    alert('Redirecting to job posting form...');
-                    // window.location.href = 'post-job.html';
+                    window.location.href = 'post-job.html';
                     break;
                 case 'Search Candidates':
-                    alert('Opening candidate search...');
-                    // window.location.href = 'search-candidates.html';
+                    window.location.href = 'find-jobs.html';
                     break;
                 case 'View Analytics':
-                    alert('Loading analytics dashboard...');
-                    // window.location.href = 'analytics.html';
+                    alert('Analytics feature coming soon!');
                     break;
             }
         });
@@ -95,12 +92,10 @@ document.addEventListener('DOMContentLoaded', function() {
             
             switch(action) {
                 case 'View':
-                    alert(`Viewing details for ${jobTitle}...`);
-                    // window.location.href = `job-details.html?job=${encodeURIComponent(jobTitle)}`;
+                    window.location.href = `job-details.html?job=${encodeURIComponent(jobTitle)}`;
                     break;
                 case 'Edit':
-                    alert(`Editing ${jobTitle}...`);
-                    // window.location.href = `edit-job.html?job=${encodeURIComponent(jobTitle)}`;
+                    window.location.href = `post-job.html?edit=${encodeURIComponent(jobTitle)}`;
                     break;
                 case 'Close':
                     if (confirm(`Close job posting for ${jobTitle}?`)) {
