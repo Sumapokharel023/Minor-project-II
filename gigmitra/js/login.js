@@ -72,13 +72,19 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 if (matchedDemo) {
                     alert(`Welcome back! Logged in as ${matchedDemo.type}`);
+                    // Redirect based on demo account type
+                    if (matchedDemo.type === 'Employer') {
+                        window.location.href = 'employer-dashboard.html';
+                    } else {
+                        window.location.href = 'index.html';
+                    }
                 } else {
                     alert('Login successful! Welcome back to GigMitra!');
+                    // Default redirect to job seeker page
+                    window.location.href = 'index.html';
                 }
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
-                // In a real application, you would redirect to the dashboard
-                // window.location.href = 'dashboard.html';
             }, 1500);
         });
     }
