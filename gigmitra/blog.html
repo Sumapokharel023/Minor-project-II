@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - GigMitra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <header class="bg-midnight-blue border-b border-cyan-blue py-4">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-0"
+      >
+        <div class="flex items-center">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-10 mr-2"
+          />
+          <span class="text-2xl font-bold text-cyan-blue">GigMitra</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Find Jobs</a
+          >
+          <a
+            href="job_categories.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Job Categories</a
+          >
+          <a
+            href="feed.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue relative"
+            >Feed
+            <span
+              class="bg-electric-blue text-white text-xs px-1 rounded absolute -top-2 -right-3"
+              >New</span
+            ></a
+          >
+          <a href="upload.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Upload Resume</a
+          >
+          <a href="cs.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Customer Service</a
+          >
+        </nav>
+        <div class="flex items-center space-x-2">
+          <button
+            class="bg-white border border-cyan-blue text-cyan-blue px-4 py-2 rounded hover:bg-azure-blue hover:text-white md:block hidden"
+          >
+            <a href="signin.html">Sign Up</a>
+          </button>
+          <button
+            class="bg-electric-blue text-white px-4 py-2 rounded hover:bg-azure-blue"
+          >
+            <a href="login.html">Sign In</a>
+          </button>
+          <a
+            href="employer-dashboard.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue ml-2"
+            >For Employer</a
+          >
+          <button
+            class="md:hidden text-cyan-blue hover:text-vivid-sky-blue focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+      <!-- Hero Section -->
+      <div class="text-center py-12 mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-midnight-blue mb-4">
+          GigMitra <span class="text-blue-500">Blog</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Stay updated with the latest career insights, job market trends, and professional development tips from Nepal's leading job portal.
+        </p>
+      </div>
+
+      <!-- Featured Article -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-12">
+        <div class="md:flex">
+          <div class="md:w-1/2">
+            <img
+              src="images/hero-bg.jpg"
+              alt="Featured Article"
+              class="w-full h-64 md:h-full object-cover"
+            />
+          </div>
+          <div class="md:w-1/2 p-8">
+            <div class="flex items-center mb-4">
+              <span class="bg-electric-blue text-white px-3 py-1 rounded-full text-sm">Featured</span>
+              <span class="text-gray-500 text-sm ml-4">January 10, 2025</span>
+            </div>
+            <h2 class="text-2xl font-bold text-midnight-blue mb-4">
+              The Future of Remote Work in Nepal: Opportunities and Challenges
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Explore how remote work is transforming the Nepali job market and what it means for both employers and job seekers. Learn about the latest trends, tools, and strategies for success in the digital workplace.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center text-cyan-blue hover:text-vivid-sky-blue font-semibold"
+            >
+              Read More
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Categories -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-midnight-blue mb-6">Browse by Category</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <button class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-200 text-center">
+            <div class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-gray-900">Career Tips</h3>
+            <p class="text-sm text-gray-600">Professional advice</p>
+          </button>
+          
+          <button class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-200 text-center">
+            <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-gray-900">Market Trends</h3>
+            <p class="text-sm text-gray-600">Industry insights</p>
+          </button>
+          
+          <button class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-200 text-center">
+            <div class="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-gray-900">Skills Development</h3>
+            <p class="text-sm text-gray-600">Learning resources</p>
+          </button>
+          
+          <button class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-200 text-center">
+            <div class="bg-yellow-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-gray-900">Company News</h3>
+            <p class="text-sm text-gray-600">Updates & announcements</p>
+          </button>
+        </div>
+      </div>
+
+      <!-- Recent Articles -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-midnight-blue mb-6">Recent Articles</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Article 1 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <img
+              src="images/testimonial1.jpg"
+              alt="Article Image"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Career Tips</span>
+                <span class="text-gray-500 text-sm ml-auto">Jan 8, 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold text-midnight-blue mb-3">
+                How to Write a Winning Resume in 2025
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Learn the latest resume writing techniques that will help you stand out in today's competitive job market.
+              </p>
+              <a
+                href="#"
+                class="text-cyan-blue hover:text-vivid-sky-blue font-semibold inline-flex items-center"
+              >
+                Read More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <img
+              src="images/testimonial2.jpg"
+              alt="Article Image"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Market Trends</span>
+                <span class="text-gray-500 text-sm ml-auto">Jan 6, 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold text-midnight-blue mb-3">
+                Top 10 In-Demand Skills in Nepal's Tech Industry
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Discover the most sought-after technical skills that employers are looking for in 2025.
+              </p>
+              <a
+                href="#"
+                class="text-cyan-blue hover:text-vivid-sky-blue font-semibold inline-flex items-center"
+              >
+                Read More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <img
+              src="images/testimonial3.jpg"
+              alt="Article Image"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">Skills Development</span>
+                <span class="text-gray-500 text-sm ml-auto">Jan 4, 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold text-midnight-blue mb-3">
+                Mastering the Art of Job Interviews
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Essential tips and strategies to ace your next job interview and land your dream position.
+              </p>
+              <a
+                href="#"
+                class="text-cyan-blue hover:text-vivid-sky-blue font-semibold inline-flex items-center"
+              >
+                Read More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <img
+              src="images/company1.jpg"
+              alt="Article Image"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Company News</span>
+                <span class="text-gray-500 text-sm ml-auto">Jan 2, 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold text-midnight-blue mb-3">
+                GigMitra Reaches 100,000 Active Users Milestone
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Celebrating our growth and the trust of job seekers and employers across Nepal.
+              </p>
+              <a
+                href="#"
+                class="text-cyan-blue hover:text-vivid-sky-blue font-semibold inline-flex items-center"
+              >
+                Read More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <img
+              src="images/company2.png"
+              alt="Article Image"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Career Tips</span>
+                <span class="text-gray-500 text-sm ml-auto">Dec 30, 2024</span>
+              </div>
+              <h3 class="text-xl font-semibold text-midnight-blue mb-3">
+                Networking Strategies for Career Growth
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Build meaningful professional relationships that can accelerate your career advancement.
+              </p>
+              <a
+                href="#"
+                class="text-cyan-blue hover:text-vivid-sky-blue font-semibold inline-flex items-center"
+              >
+                Read More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <img
+              src="images/company3.png"
+              alt="Article Image"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Market Trends</span>
+                <span class="text-gray-500 text-sm ml-auto">Dec 28, 2024</span>
+              </div>
+              <h3 class="text-xl font-semibold text-midnight-blue mb-3">
+                The Rise of Fintech Jobs in Nepal
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Exploring the growing opportunities in Nepal's financial technology sector.
+              </p>
+              <a
+                href="#"
+                class="text-cyan-blue hover:text-vivid-sky-blue font-semibold inline-flex items-center"
+              >
+                Read More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Newsletter Signup -->
+      <div class="bg-gradient-to-r from-cyan-blue to-electric-blue rounded-xl p-8 text-white text-center">
+        <h2 class="text-2xl font-bold mb-4">Stay Updated with Our Newsletter</h2>
+        <p class="mb-6">Get the latest career insights and job market trends delivered to your inbox.</p>
+        <div class="max-w-md mx-auto flex">
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            class="flex-1 px-4 py-3 rounded-l-lg text-gray-900 focus:outline-none"
+          />
+          <button class="bg-midnight-blue text-white px-6 py-3 rounded-r-lg hover:bg-opacity-90 transition-colors duration-200">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-midnight-blue text-white py-8 mt-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Jobseekers</h3>
+          <a
+            href="find-jobs.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Find Jobs</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="upload.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Upload Resume</a
+          >
+          <a
+            href="jobseeker-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Jobseeker Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Employers</h3>
+          <a
+            href="post-job.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Post a Job</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="employer-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Employer Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">Company</h3>
+          <a
+            href="why-gigmitra.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Why GigMitra?</a
+          >
+          <a
+            href="blog.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Blog</a
+          >
+          <a
+            href="about.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >About GigMitra</a
+          >
+          <a
+            href="career.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Career</a
+          >
+          <a
+            href="contact-us.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Contact Us</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">
+            Helpful Resources
+          </h3>
+          <a
+            href="terms.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Terms & Conditions</a
+          >
+          <a
+            href="privacy.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-12 mb-2"
+          />
+          <p class="text-center md:text-left text-sm">
+            Bridging Hiring Gaps
+          </p>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 mt-6 pt-6 border-t border-gray-700">
+        <p class="text-center text-sm">
+          Copyright © 2025 GigMitra Pvt. Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
+  </body>
+</html>
+

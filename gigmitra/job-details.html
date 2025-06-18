@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Details - GigMitra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <header class="bg-midnight-blue border-b border-cyan-blue py-4">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-0"
+      >
+        <div class="flex items-center">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-10 mr-2"
+          />
+          <span class="text-2xl font-bold text-cyan-blue">GigMitra</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Find Jobs</a
+          >
+          <a
+            href="job_categories.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Job Categories</a
+          >
+          <a
+            href="feed.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue relative"
+            >Feed
+            <span
+              class="bg-electric-blue text-white text-xs px-1 rounded absolute -top-2 -right-3"
+              >New</span
+            ></a
+          >
+          <a href="upload.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Upload Resume</a
+          >
+          <a href="cs.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Customer Service</a
+          >
+        </nav>
+        <div class="flex items-center space-x-2">
+          <button
+            class="bg-white border border-cyan-blue text-cyan-blue px-4 py-2 rounded hover:bg-azure-blue hover:text-white md:block hidden"
+          >
+            <a href="signin.html">Sign Up</a>
+          </button>
+          <button
+            class="bg-electric-blue text-white px-4 py-2 rounded hover:bg-azure-blue"
+          >
+            <a href="login.html">Sign In</a>
+          </button>
+          <a
+            href="employer-dashboard.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue ml-2"
+            >For Employer</a
+          >
+          <button
+            class="md:hidden text-cyan-blue hover:text-vivid-sky-blue focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+      <!-- Breadcrumb -->
+      <nav class="mb-6">
+        <ol class="flex items-center space-x-2 text-sm text-gray-600">
+          <li><a href="index.html" class="hover:text-cyan-blue">Home</a></li>
+          <li><span class="mx-2">/</span></li>
+          <li><a href="index.html" class="hover:text-cyan-blue">Jobs</a></li>
+          <li><span class="mx-2">/</span></li>
+          <li class="text-gray-900 font-medium">Job Details</li>
+        </ol>
+      </nav>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Main Content -->
+        <div class="lg:col-span-2">
+          <!-- Job Header -->
+          <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+            <div class="flex items-start justify-between mb-4">
+              <div class="flex items-center space-x-4">
+                <img
+                  src="images/company2.png"
+                  alt="Company Logo"
+                  class="h-16 w-16 rounded-lg border"
+                />
+                <div>
+                  <h1 class="text-2xl font-bold text-midnight-blue mb-1">
+                    Fintech Support Specialist
+                  </h1>
+                  <p class="text-lg text-gray-600 mb-1">eSewa</p>
+                  <p class="text-gray-500">Lalitpur, Nepal</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <p class="text-lg font-semibold text-green-600 mb-1">
+                  NPR 30K - 50K
+                </p>
+                <p class="text-sm text-gray-500">Per Month</p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                >Full Time</span
+              >
+              <span
+                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                >On-Site</span
+              >
+              <span
+                class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+                >Mid Level</span
+              >
+              <span
+                class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm"
+                >1-2 years</span
+              >
+            </div>
+
+            <div class="flex space-x-4">
+              <button
+                id="apply-now-btn"
+                class="bg-electric-blue text-white px-6 py-3 rounded-lg hover:bg-azure-blue transition-colors duration-200 font-semibold flex items-center space-x-2"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                  ></path>
+                </svg>
+                <span>Apply Now</span>
+              </button>
+              <button
+                class="bg-white border border-cyan-blue text-cyan-blue px-6 py-3 rounded-lg hover:bg-cyan-blue hover:text-white transition-colors duration-200 font-semibold flex items-center space-x-2"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  ></path>
+                </svg>
+                <span>Save Job</span>
+              </button>
+              <button
+                class="bg-gray-100 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors duration-200 font-semibold flex items-center space-x-2"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"
+                  ></path>
+                </svg>
+                <span>Share</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Job Description -->
+          <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+            <h2 class="text-xl font-bold text-midnight-blue mb-4">
+              Job Description
+            </h2>
+            <div class="prose max-w-none text-gray-700">
+              <p class="mb-4">
+                We are looking for a dedicated Fintech Support Specialist to
+                join our customer service team at eSewa. The ideal candidate
+                will have excellent communication skills and a passion for
+                helping customers with their financial technology needs.
+              </p>
+
+              <h3 class="text-lg font-semibold text-midnight-blue mb-2">
+                Key Responsibilities:
+              </h3>
+              <ul class="list-disc pl-6 mb-4 space-y-1">
+                <li>
+                  Provide exceptional customer support via phone, email, and
+                  chat
+                </li>
+                <li>
+                  Troubleshoot technical issues related to mobile payments and
+                  digital wallets
+                </li>
+                <li>
+                  Process customer transactions and resolve payment disputes
+                </li>
+                <li>
+                  Maintain detailed records of customer interactions and
+                  transactions
+                </li>
+                <li>
+                  Collaborate with technical teams to resolve complex issues
+                </li>
+                <li>Stay updated on product features and company policies</li>
+              </ul>
+
+              <h3 class="text-lg font-semibold text-midnight-blue mb-2">
+                Required Qualifications:
+              </h3>
+              <ul class="list-disc pl-6 mb-4 space-y-1">
+                <li>Bachelor's degree in Business, IT, or related field</li>
+                <li>
+                  1-2 years of experience in customer service or technical
+                  support
+                </li>
+                <li>Strong communication skills in English and Nepali</li>
+                <li>
+                  Basic understanding of financial services and digital payments
+                </li>
+                <li>Proficiency in MS Office and CRM software</li>
+                <li>Problem-solving mindset with attention to detail</li>
+              </ul>
+
+              <h3 class="text-lg font-semibold text-midnight-blue mb-2">
+                Preferred Qualifications:
+              </h3>
+              <ul class="list-disc pl-6 mb-4 space-y-1">
+                <li>Experience with fintech or banking industry</li>
+                <li>Knowledge of mobile payment systems</li>
+                <li>Customer service certifications</li>
+                <li>Multilingual capabilities</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Benefits -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-xl font-bold text-midnight-blue mb-4">
+              Benefits & Perks
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="flex items-center space-x-3">
+                <div class="bg-green-100 p-2 rounded-lg">
+                  <svg
+                    class="w-5 h-5 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Competitive Salary</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div class="bg-blue-100 p-2 rounded-lg">
+                  <svg
+                    class="w-5 h-5 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Health Insurance</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div class="bg-purple-100 p-2 rounded-lg">
+                  <svg
+                    class="w-5 h-5 text-purple-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Learning & Development</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div class="bg-yellow-100 p-2 rounded-lg">
+                  <svg
+                    class="w-5 h-5 text-yellow-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Flexible Hours</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div class="bg-red-100 p-2 rounded-lg">
+                  <svg
+                    class="w-5 h-5 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Team Building Events</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div class="bg-indigo-100 p-2 rounded-lg">
+                  <svg
+                    class="w-5 h-5 text-indigo-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Modern Office</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <!-- Job Summary -->
+          <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+            <h3 class="text-lg font-bold text-midnight-blue mb-4">
+              Job Summary
+            </h3>
+            <div class="space-y-3">
+              <div class="flex justify-between">
+                <span class="text-gray-600">Job Type:</span>
+                <span class="font-medium">Full Time</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Experience:</span>
+                <span class="font-medium">1-2 years</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Location:</span>
+                <span class="font-medium">Lalitpur, Nepal</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Work Mode:</span>
+                <span class="font-medium">On-Site</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Posted:</span>
+                <span class="font-medium">2 days ago</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Expires:</span>
+                <span class="font-medium text-red-600">25 days left</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Company Info -->
+          <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+            <h3 class="text-lg font-bold text-midnight-blue mb-4">
+              About eSewa
+            </h3>
+            <div class="text-center mb-4">
+              <img
+                src="images/company3.png"
+                alt="eSewa Logo"
+                class="h-20 mx-auto mb-3"
+              />
+              <h4 class="font-semibold text-gray-900">eSewa</h4>
+              <p class="text-sm text-gray-600">Digital Payment Solutions</p>
+            </div>
+            <p class="text-gray-700 text-sm mb-4">
+              eSewa is Nepal's first online payment gateway that allows
+              customers to pay, send and receive money online. We are committed
+              to providing secure and convenient digital payment solutions.
+            </p>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span class="text-gray-600">Industry:</span>
+                <span class="font-medium">Fintech</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Company Size:</span>
+                <span class="font-medium">200-500</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Founded:</span>
+                <span class="font-medium">2009</span>
+              </div>
+            </div>
+            <button
+              class="w-full mt-4 bg-cyan-blue text-white py-2 rounded-lg hover:bg-vivid-sky-blue transition-colors duration-200"
+            >
+              View All Jobs
+            </button>
+          </div>
+
+          <!-- Similar Jobs -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="text-lg font-bold text-midnight-blue mb-4">
+              Similar Jobs
+            </h3>
+            <div class="space-y-4">
+              <div
+                class="border-b border-gray-200 pb-4 last:border-b-0 last:pb-0"
+              >
+                <h4 class="font-medium text-gray-900 mb-1">
+                  Customer Service Representative
+                </h4>
+                <p class="text-sm text-gray-600 mb-1">Yeti Airlines</p>
+                <p class="text-sm text-green-600 font-medium">NPR 25K - 40K</p>
+              </div>
+              <div
+                class="border-b border-gray-200 pb-4 last:border-b-0 last:pb-0"
+              >
+                <h4 class="font-medium text-gray-900 mb-1">
+                  Technical Support Specialist
+                </h4>
+                <p class="text-sm text-gray-600 mb-1">Build Your Dreams</p>
+                <p class="text-sm text-green-600 font-medium">NPR 35K - 55K</p>
+              </div>
+              <div
+                class="border-b border-gray-200 pb-4 last:border-b-0 last:pb-0"
+              >
+                <h4 class="font-medium text-gray-900 mb-1">
+                  Banking Associate
+                </h4>
+                <p class="text-sm text-gray-600 mb-1">Tata Motors</p>
+                <p class="text-sm text-green-600 font-medium">NPR 30K - 45K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-midnight-blue text-white py-8 mt-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Jobseekers</h3>
+          <a
+            href="find-jobs.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Find Jobs</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="upload.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Upload Resume</a
+          >
+          <a
+            href="jobseeker-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Jobseeker Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Employers</h3>
+          <a
+            href="post-job.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Post a Job</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="employer-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Employer Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">Company</h3>
+          <a
+            href="why-gigmitra.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Why GigMitra?</a
+          >
+          <a
+            href="blog.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Blog</a
+          >
+          <a
+            href="about.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >About GigMitra</a
+          >
+          <a
+            href="career.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Career</a
+          >
+          <a
+            href="contact-us.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Contact Us</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">
+            Helpful Resources
+          </h3>
+          <a
+            href="terms.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Terms & Conditions</a
+          >
+          <a
+            href="privacy.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-12 mb-2"
+          />
+          <p class="text-center md:text-left text-sm">
+            Bridging Hiring Gaps
+          </p>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 mt-6 pt-6 border-t border-gray-700">
+        <p class="text-center text-sm">
+          Copyright © 2025 GigMitra Pvt. Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/job-details.js"></script>
+  </body>
+</html>

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GigMitra - Customer Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <header class="bg-midnight-blue border-b border-cyan-blue py-4">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-0"
+      >
+        <div class="flex items-center">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-10 mr-2"
+          />
+          <span class="text-2xl font-bold text-cyan-blue">GigMitra</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Find Jobs</a
+          >
+          <a
+            href="job_categories.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Job Categories</a
+          >
+          <a
+            href="feed.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue relative"
+            >Feed
+            <span
+              class="bg-electric-blue text-white text-xs px-1 rounded absolute -top-2 -right-3"
+              >New</span
+            ></a
+          >
+          <a href="upload.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Upload Resume</a
+          >
+          <a
+            href="cs.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue font-bold"
+            >Customer Service</a
+          >
+        </nav>
+        <div class="flex items-center space-x-2">
+          <button
+            class="bg-white border border-cyan-blue text-cyan-blue px-4 py-2 rounded hover:bg-azure-blue hover:text-white md:block hidden"
+          >
+            <a href="signin.html">Sign Up</a>
+          </button>
+          <button
+            class="bg-electric-blue text-white px-4 py-2 rounded hover:bg-azure-blue"
+          >
+            <a href="login.html">Sign In</a>
+          </button>
+          <a
+            href="employer-dashboard.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue ml-2"
+            >For Employer</a
+          >
+          <button
+            class="md:hidden text-cyan-blue hover:text-vivid-sky-blue focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+      <section class="cs-hero text-center py-10">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Customer <span class="text-blue-500">Service</span>
+        </h1>
+        <p class="text-gray-600 mb-6">
+          We're here to help! Find answers to common questions or get in touch
+          with our support team.
+        </p>
+      </section>
+
+      <!-- Quick Help Section -->
+      <section class="quick-help mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
+          >
+            <div
+              class="bg-cyan-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-midnight-blue mb-2">FAQ</h3>
+            <p class="text-gray-600 mb-4">
+              Find quick answers to frequently asked questions
+            </p>
+            <button
+              onclick="scrollToSection('faq')"
+              class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue transition-colors duration-200"
+            >
+              View FAQ
+            </button>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
+          >
+            <div
+              class="bg-cyan-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-midnight-blue mb-2">
+              Contact Us
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Send us a message and we'll get back to you
+            </p>
+            <button
+              onclick="scrollToSection('contact')"
+              class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue transition-colors duration-200"
+            >
+              Contact Form
+            </button>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
+          >
+            <div
+              class="bg-cyan-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-midnight-blue mb-2">
+              Call Us
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Speak directly with our support team
+            </p>
+            <a
+              href="tel:+977-1-4567890"
+              class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue transition-colors duration-200 inline-block"
+            >
+              +977-1-4567890
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="faq-section mb-12">
+        <h2 class="text-3xl font-bold text-midnight-blue text-center mb-8">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="max-w-4xl mx-auto space-y-4">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item bg-white rounded-xl shadow-lg">
+            <button
+              class="faq-question w-full text-left p-6 focus:outline-none"
+              onclick="toggleFAQ(this)"
+            >
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-midnight-blue">
+                  How do I create an account on GigMitra?
+                </h3>
+                <svg
+                  class="faq-icon w-5 h-5 text-cyan-blue transform transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6">
+              <p class="text-gray-600">
+                Creating an account is simple! Click on the "Sign Up" button in
+                the top navigation, fill in your basic information including
+                name, email, and password. You can also upload your resume
+                during the registration process to get started immediately.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item bg-white rounded-xl shadow-lg">
+            <button
+              class="faq-question w-full text-left p-6 focus:outline-none"
+              onclick="toggleFAQ(this)"
+            >
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-midnight-blue">
+                  Is GigMitra free to use for job seekers?
+                </h3>
+                <svg
+                  class="faq-icon w-5 h-5 text-cyan-blue transform transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6">
+              <p class="text-gray-600">
+                Yes! GigMitra is completely free for job seekers. You can create
+                an account, upload your resume, search for jobs, and apply to
+                positions without any charges. We make money by charging
+                employers to post job listings.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item bg-white rounded-xl shadow-lg">
+            <button
+              class="faq-question w-full text-left p-6 focus:outline-none"
+              onclick="toggleFAQ(this)"
+            >
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-midnight-blue">
+                  How do I apply for jobs on GigMitra?
+                </h3>
+                <svg
+                  class="faq-icon w-5 h-5 text-cyan-blue transform transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6">
+              <p class="text-gray-600">
+                Once you've uploaded your resume, you can apply to jobs with
+                just one click using the "Quick Apply" button. For detailed
+                applications, click "View Details" to see the full job
+                description and submit a customized application with a cover
+                letter.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item bg-white rounded-xl shadow-lg">
+            <button
+              class="faq-question w-full text-left p-6 focus:outline-none"
+              onclick="toggleFAQ(this)"
+            >
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-midnight-blue">
+                  What file formats are supported for resume upload?
+                </h3>
+                <svg
+                  class="faq-icon w-5 h-5 text-cyan-blue transform transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6">
+              <p class="text-gray-600">
+                We support PDF, DOC, and DOCX file formats for resume uploads.
+                The maximum file size allowed is 10MB. We recommend using PDF
+                format for the best compatibility and formatting preservation.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item bg-white rounded-xl shadow-lg">
+            <button
+              class="faq-question w-full text-left p-6 focus:outline-none"
+              onclick="toggleFAQ(this)"
+            >
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-midnight-blue">
+                  How can employers find my profile?
+                </h3>
+                <svg
+                  class="faq-icon w-5 h-5 text-cyan-blue transform transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6">
+              <p class="text-gray-600">
+                When you upload your resume and complete your profile, employers
+                can discover you through our candidate database. Make sure to
+                include relevant keywords in your profile and keep your
+                information up-to-date to increase your visibility.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item bg-white rounded-xl shadow-lg">
+            <button
+              class="faq-question w-full text-left p-6 focus:outline-none"
+              onclick="toggleFAQ(this)"
+            >
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-midnight-blue">
+                  How do I get job alerts?
+                </h3>
+                <svg
+                  class="faq-icon w-5 h-5 text-cyan-blue transform transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6">
+              <p class="text-gray-600">
+                You can enable job alerts when creating your profile or in your
+                account settings. We'll send you email notifications when new
+                jobs matching your skills and preferences are posted. You can
+                customize the frequency and types of alerts you receive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section id="contact" class="contact-section mb-12">
+        <h2 class="text-3xl font-bold text-midnight-blue text-center mb-8">
+          Contact Our Support Team
+        </h2>
+
+        <div class="max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Contact Information -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h3 class="text-2xl font-semibold text-midnight-blue mb-6">
+                Get in Touch
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <div
+                    class="bg-cyan-blue text-white w-10 h-10 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-midnight-blue">Address</p>
+                    <p class="text-gray-600">Kathmandu, Nepal</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center">
+                  <div
+                    class="bg-cyan-blue text-white w-10 h-10 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-midnight-blue">Phone</p>
+                    <p class="text-gray-600">+977-1-4567890</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center">
+                  <div
+                    class="bg-cyan-blue text-white w-10 h-10 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-midnight-blue">Email</p>
+                    <p class="text-gray-600">support@gigmitra.com</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center">
+                  <div
+                    class="bg-cyan-blue text-white w-10 h-10 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-midnight-blue">
+                      Business Hours
+                    </p>
+                    <p class="text-gray-600">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h3 class="text-2xl font-semibold text-midnight-blue mb-6">
+                Send us a Message
+              </h3>
+
+              <form id="contact-form" class="space-y-4">
+                <div>
+                  <label
+                    for="contact-name"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Full Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="contact-name"
+                    required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                    placeholder="Enter your full name"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="contact-email"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Email Address *
+                  </label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="contact-email"
+                    required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                    placeholder="Enter your email address"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="contact-subject"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Subject *
+                  </label>
+                  <select
+                    id="contact-subject"
+                    name="contact-subject"
+                    required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="account-help">Account Help</option>
+                    <option value="job-application">
+                      Job Application Issues
+                    </option>
+                    <option value="resume-upload">
+                      Resume Upload Problems
+                    </option>
+                    <option value="technical-issue">Technical Issues</option>
+                    <option value="employer-inquiry">Employer Inquiry</option>
+                    <option value="feedback">Feedback & Suggestions</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label
+                    for="contact-message"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Message *
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    name="contact-message"
+                    required
+                    rows="5"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                    placeholder="Please describe your issue or question in detail..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-electric-blue text-white py-3 rounded-lg hover:bg-azure-blue transition-colors duration-200 font-semibold"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-midnight-blue text-white py-8 mt-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Jobseekers</h3>
+          <a
+            href="find-jobs.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Find Jobs</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="upload.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Upload Resume</a
+          >
+          <a
+            href="jobseeker-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Jobseeker Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Employers</h3>
+          <a
+            href="post-job.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Post a Job</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="employer-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Employer Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">Company</h3>
+          <a
+            href="why-gigmitra.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Why GigMitra?</a
+          >
+          <a
+            href="blog.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Blog</a
+          >
+          <a
+            href="about.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >About GigMitra</a
+          >
+          <a
+            href="career.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Career</a
+          >
+          <a
+            href="contact-us.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Contact Us</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">
+            Helpful Resources
+          </h3>
+          <a
+            href="terms.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Terms & Conditions</a
+          >
+          <a
+            href="privacy.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-12 mb-2"
+          />
+          <p class="text-center md:text-left text-sm">
+            Bridging Hiring Gaps
+          </p>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 mt-6 pt-6 border-t border-gray-700">
+        <p class="text-center text-sm">
+          Copyright © 2025 GigMitra Pvt. Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cs.js"></script>
+  </body>
+</html>

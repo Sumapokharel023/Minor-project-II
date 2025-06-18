@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GigMitra - Find Your Dream Job</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <header class="bg-midnight-blue border-b border-cyan-blue py-4">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-0"
+      >
+        <div class="flex items-center">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-10 mr-2"
+          />
+          <span class="text-2xl font-bold text-cyan-blue">GigMitra</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Find Jobs</a
+          >
+          <a
+            href="job_categories.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Job Categories</a
+          >
+          <a
+            href="feed.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue relative"
+            >Feed
+            <span
+              class="bg-electric-blue text-white text-xs px-1 rounded absolute -top-2 -right-3"
+              >New</span
+            ></a
+          >
+          <a href="upload.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Upload Resume</a
+          >
+          <a href="cs.html" class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Customer Service</a
+          >
+        </nav>
+        <div class="flex items-center space-x-2">
+          <button
+            class="bg-white border border-cyan-blue text-cyan-blue px-4 py-2 rounded hover:bg-azure-blue hover:text-white md:block hidden"
+          >
+            <a href="signin.html">Sign Up</a>
+          </button>
+          <button
+            class="bg-electric-blue text-white px-4 py-2 rounded hover:bg-azure-blue"
+          >
+            <a href="login.html">Sign In</a>
+          </button>
+          <a
+            href="employer-dashboard.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue ml-2"
+            >For Employer</a
+          >
+          <button
+            class="md:hidden text-cyan-blue hover:text-vivid-sky-blue focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+      <section class="hero text-center py-10 text-black rounded-lg">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Find Your <span class="text-blue-500">Dream Job</span> With GigMitra
+        </h1>
+
+        <div
+          class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 mb-6 relative"
+        >
+          <div class="w-full md:w-2/3 relative">
+            <input
+              type="text"
+              id="search-input"
+              class="bg-gray-200 text-black w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+              placeholder="Search jobs by title, skill or company"
+              autocomplete="off"
+            />
+            <div
+              id="search-suggestions"
+              class="absolute w-full bg-white border border-gray-300 rounded-lg mt-1 shadow-lg hidden z-10 max-h-60 overflow-y-auto"
+            >
+              <!-- Suggestions will be populated by JavaScript -->
+            </div>
+          </div>
+          <span class="text-black">Location: Kathmandu, Nepal</span>
+          <button
+            id="search-button"
+            class="bg-electric-blue text-white p-2 rounded-lg hover:bg-azure-blue w-full md:w-auto"
+          >
+            Search
+          </button>
+        </div>
+        <div class="discover flex flex-wrap justify-center gap-2">
+          <button
+            class="bg-cyan-blue hover:bg-vivid-sky-blue text-white p-2 rounded-lg"
+          >
+            Operations Apprentice
+          </button>
+          <button
+            class="bg-cyan-blue hover:bg-vivid-sky-blue text-white p-2 rounded-lg"
+          >
+            Social Content Creator
+          </button>
+          <button
+            class="bg-cyan-blue hover:bg-vivid-sky-blue text-white p-2 rounded-lg"
+          >
+            Computer Instructor/Document Officer
+          </button>
+          <button
+            class="bg-cyan-blue hover:bg-vivid-sky-blue text-white p-2 rounded-lg"
+          >
+            TV Program Host
+          </button>
+        </div>
+      </section>
+
+      <section class="companies mt-10">
+        <h2 class="text-2xl font-semibold text-midnight-blue mb-4">
+          Companies Actively Hiring
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
+          <div class="company-card text-center p-4 bg-white shadow rounded-lg">
+            <img
+              src="images/company1.jpg"
+              alt="Sasto Nepal Tour"
+              class="h-16 mx-auto mb-2"
+            />
+            <p class="text-gray-700">Sasto Nepal Tour</p>
+            <button
+              class="bg-cyan-blue text-white px-3 py-1 rounded hover:bg-vivid-sky-blue mt-2"
+            >
+              View Jobs
+            </button>
+          </div>
+          <div class="company-card text-center p-4 bg-white shadow rounded-lg">
+            <img
+              src="images/company2.png"
+              alt="Yeti Airlines"
+              class="h-16 mx-auto mb-2"
+            />
+            <p class="text-gray-700">Yeti Airlines</p>
+            <button
+              class="bg-cyan-blue text-white px-3 py-1 rounded hover:bg-vivid-sky-blue mt-2"
+            >
+              View Jobs
+            </button>
+          </div>
+          <div class="company-card text-center p-4 bg-white shadow rounded-lg">
+            <img
+              src="images/company3.png"
+              alt="Esewa"
+              class="h-16 mx-auto mb-2"
+            />
+            <p class="text-gray-700">Esewa</p>
+            <button
+              class="bg-cyan-blue text-white px-3 py-1 rounded hover:bg-vivid-sky-blue mt-2"
+            >
+              View Jobs
+            </button>
+          </div>
+          <div class="company-card text-center p-4 bg-white shadow rounded-lg">
+            <img
+              src="images/company4.jpg"
+              alt="Build Your Dreams"
+              class="h-16 mx-auto mb-2"
+            />
+            <p class="text-gray-700">Build Your Dreams</p>
+            <button
+              class="bg-cyan-blue text-white px-3 py-1 rounded hover:bg-vivid-sky-blue mt-2"
+            >
+              View Jobs
+            </button>
+          </div>
+          <div class="company-card text-center p-4 bg-white shadow rounded-lg">
+            <img
+              src="images/company5.jpg"
+              alt="Tata Motors"
+              class="h-16 mx-auto mb-2"
+            />
+            <p class="text-gray-700">Tata Motors</p>
+            <button
+              class="bg-cyan-blue text-white px-3 py-1 rounded hover:bg-vivid-sky-blue mt-2"
+            >
+              View Jobs
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials mt-10 p-6 rounded-lg text-white">
+        <h2 class="text-2xl font-semibold text-black mb-4 text-center">
+          Find out how GigMitra Jobseekers achieved career breakthroughs.
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+          <div
+            class="testimonial-card p-6 bg-white shadow-lg rounded-xl text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src="images/testimonial1.jpg"
+              alt="Anil Shrestha"
+              class="h-24 w-24 rounded-full mx-auto mb-4 border-4 border-cyan-500"
+            />
+            <p class="text-black text-lg italic mb-4">
+              "GigMitra played a pivotal role in securing a job for me. It
+              stands out as an exceptional job platform in Nepal, offering
+              outstanding opportunities for job seekers."
+            </p>
+            <p class="text-black font-bold text-xl">Anil Shrestha</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm">
+              Frontend Developer
+            </p>
+            <span class="text-yellow-400 text-2xl">★★★★☆</span>
+          </div>
+          <div
+            class="testimonial-card p-6 bg-white shadow-lg rounded-xl text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src="images/testimonial2.jpg"
+              alt="Ramesh Thapa"
+              class="h-24 w-24 rounded-full mx-auto mb-4 border-4 border-cyan-500"
+            />
+            <p class="text-black text-lg italic mb-4">
+              "I got a job in Kathmandu through GigMitra, the best job portal in
+              Nepal!"
+            </p>
+            <p class="text-black font-bold text-xl">Ramesh Thapa</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm">
+              UI/UX Designer
+            </p>
+            <span class="text-yellow-400 text-2xl">★★★★★</span>
+          </div>
+          <div
+            class="testimonial-card p-6 bg-white shadow-lg rounded-xl text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src="images/testimonial3.jpg"
+              alt="Sita Gurung"
+              class="h-24 w-24 rounded-full mx-auto mb-4 border-4 border-cyan-500"
+            />
+            <p class="text-black text-lg italic mb-4">
+              "Exceptional quality of service. Your only responsibility is to
+              upload your resume; GigMitra will take care of the rest."
+            </p>
+            <p class="text-black font-bold text-xl">Sita Gurung</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm">Lecturer</p>
+            <span class="text-yellow-400 text-2xl">★★★★★</span>
+          </div>
+        </div>
+        <button
+          class="bg-electric-blue text-white px-4 py-2 rounded hover:bg-azure-blue mt-4 block mx-auto"
+        >
+          View More
+        </button>
+      </section>
+
+      <section class="trending-jobs mt-12 py-8 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-midnight-blue mb-8 text-center"
+          >
+            Trending Jobs
+          </h2>
+          <div
+            id="trending-job-listings"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <!-- Jobs will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <section class="mobile-app mt-12 py-12 bg-gray-50">
+        <div
+          class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center"
+        >
+          <div class="md:w-1/2 text-left mb-8 md:mb-0 md:pr-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Find & Apply for Jobs
+              <span class="text-cyan-500">on the Go!</span>
+            </h2>
+            <p class="mb-12 text-gray-600 dark:text-gray-300 text-lg max-w-md">
+              Stay updated with the latest job openings and apply anytime, from
+              anywhere with our mobile app.
+            </p>
+          </div>
+          <div class="md:w-1/2 relative group">
+            <img
+              src="images/mobile-mockup.jpg"
+              alt="Mobile App Mockup"
+              class="w-full max-w-sm rounded-lg shadow-lg transform transition duration-300 group-hover:scale-105 mx-auto"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+   <footer class="bg-midnight-blue text-white py-8 mt-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Jobseekers</h3>
+          <a
+            href="find-jobs.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Find Jobs</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="upload.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Upload Resume</a
+          >
+          <a
+            href="jobseeker-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Jobseeker Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Employers</h3>
+          <a
+            href="post-job.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Post a Job</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="employer-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Employer Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">Company</h3>
+          <a
+            href="why-gigmitra.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Why GigMitra?</a
+          >
+          <a
+            href="blog.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Blog</a
+          >
+          <a
+            href="about.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >About GigMitra</a
+          >
+          <a
+            href="career.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Career</a
+          >
+          <a
+            href="contact-us.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Contact Us</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">
+            Helpful Resources
+          </h3>
+          <a
+            href="terms.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Terms & Conditions</a
+          >
+          <a
+            href="privacy.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-12 mb-2"
+          />
+          <p class="text-center md:text-left text-sm">
+            Bridging Hiring Gaps
+          </p>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 mt-6 pt-6 border-t border-gray-700">
+        <p class="text-center text-sm">
+          Copyright © 2025 GigMitra Pvt. Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/job_categories.js"></script>
+  </body>
+</html>
