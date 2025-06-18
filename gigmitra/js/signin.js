@@ -101,8 +101,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Account created successfully! Welcome to GigMitra!');
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
-                // In a real application, you would redirect to the dashboard
-                // window.location.href = 'dashboard.html';
+                
+                // Get selected account type
+                const selectedAccountType = document.querySelector('input[name="account-type"]:checked').value;
+                
+                // Redirect based on account type
+                if (selectedAccountType === 'employer') {
+                    window.location.href = 'employer-dashboard.html';
+                } else {
+                    window.location.href = 'index.html';
+                }
             }, 2000);
         });
     }
