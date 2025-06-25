@@ -350,7 +350,12 @@
             </div>
 
             <!-- Submit Button -->
-
+            <button
+              type="submit"
+              class="w-full bg-electric-blue text-white p-3 rounded-lg font-semibold hover:bg-azure-blue transition-colors duration-200"
+            >
+              Submit Application
+            </button>
           </form>
         </div>
       </div>
@@ -464,10 +469,10 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Get job ID from URL parameter
-        const jobId = getUrlParameter('jobId');
+        const jobId = window.getUrlParameter('jobId');
         
         if (jobId) {
-          const job = getJobById(jobId);
+          const job = window.getJobById(jobId);
           
           if (job) {
             // Update job info card
@@ -475,6 +480,7 @@
             document.getElementById('job-company-location').textContent = `${job.company} • ${job.location}`;
             document.getElementById('job-salary').textContent = `${job.salary} per month`;
             document.getElementById('job-type').textContent = job.type.replace('-', ' ').toUpperCase();
+            document.getElementById('job-company-logo').src = job.logo;
           } else {
             // Job not found
             document.getElementById('job-title').textContent = 'Job Not Found';
@@ -514,10 +520,3 @@
     </script>
   </body>
 </html>
-            <button
-              type="submit"
-              class="w-full bg-electric-blue text-white p-3 rounded-lg font-semibold hover:bg-azure-blue transition-colors duration-200"
-            >
-              Submit Application
-            </button>
-
