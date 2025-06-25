@@ -115,8 +115,8 @@
           </h2>
         </div>
 
-        <div class="divide-y divide-gray-200">
-          <div class="p-6 hover:bg-gray-50">
+        <div class="divide-y divide-gray-200" id="applications-list">
+          <div class="p-6 hover:bg-gray-50 application-item" data-applicant="Rajesh Kumar Sharma" data-job="Software Developer">
             <div class="flex justify-between items-start">
               <div class="flex-1">
                 <h3 class="text-lg font-semibold text-midnight-blue mb-2">
@@ -136,12 +136,12 @@
                   New
                 </span>
                 <button
-                  class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue"
+                  class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue view-resume-btn"
                 >
                   View Resume
                 </button>
                 <button
-                  class="bg-electric-blue text-white px-4 py-2 rounded-lg hover:bg-azure-blue"
+                  class="bg-electric-blue text-white px-4 py-2 rounded-lg hover:bg-azure-blue interview-btn"
                 >
                   Shortlist
                 </button>
@@ -149,7 +149,7 @@
             </div>
           </div>
 
-          <div class="p-6 hover:bg-gray-50">
+          <div class="p-6 hover:bg-gray-50 application-item" data-applicant="Priya Thapa" data-job="Marketing Manager">
             <div class="flex justify-between items-start">
               <div class="flex-1">
                 <h3 class="text-lg font-semibold text-midnight-blue mb-2">
@@ -167,12 +167,12 @@
                   Reviewed
                 </span>
                 <button
-                  class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue"
+                  class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue view-resume-btn"
                 >
                   View Resume
                 </button>
                 <button
-                  class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+                  class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 interview-btn"
                 >
                   Interview
                 </button>
@@ -180,7 +180,7 @@
             </div>
           </div>
 
-          <div class="p-6 hover:bg-gray-50">
+          <div class="p-6 hover:bg-gray-50 application-item" data-applicant="Amit Gurung" data-job="Sales Executive">
             <div class="flex justify-between items-start">
               <div class="flex-1">
                 <h3 class="text-lg font-semibold text-midnight-blue mb-2">
@@ -198,12 +198,12 @@
                   Shortlisted
                 </span>
                 <button
-                  class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue"
+                  class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue view-resume-btn"
                 >
                   View Resume
                 </button>
                 <button
-                  class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+                  class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 interview-btn"
                 >
                   Schedule Interview
                 </button>
@@ -336,9 +336,30 @@
       </div>
     </footer>
 
+    <script src="js/shared-data.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Add any interactive functionality here
+        // Add event listeners for View Resume and Interview buttons
+        const viewResumeButtons = document.querySelectorAll(".view-resume-btn");
+        const interviewButtons = document.querySelectorAll(".interview-btn");
+
+        viewResumeButtons.forEach(button => {
+          button.addEventListener("click", function () {
+            const applicationItem = this.closest(".application-item");
+            const applicant = applicationItem.getAttribute("data-applicant");
+            const job = applicationItem.getAttribute("data-job");
+            window.location.href = `view-resume.html?applicant=${encodeURIComponent(applicant)}&job=${encodeURIComponent(job)}`;
+          });
+        });
+
+        interviewButtons.forEach(button => {
+          button.addEventListener("click", function () {
+            const applicationItem = this.closest(".application-item");
+            const applicant = applicationItem.getAttribute("data-applicant");
+            const job = applicationItem.getAttribute("data-job");
+            window.location.href = `interview.html?applicant=${encodeURIComponent(applicant)}&job=${encodeURIComponent(job)}`;
+          });
+        });
       });
     </script>
   </body>

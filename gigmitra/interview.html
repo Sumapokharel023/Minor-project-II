@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview - GigMitra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <header class="bg-midnight-blue border-b border-cyan-blue py-4">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-0"
+      >
+        <div class="flex items-center">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-10 mr-2"
+          />
+          <span class="text-2xl font-bold text-cyan-blue">GigMitra</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a
+            href="employer-dashboard.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Dashboard</a
+          >
+          <a
+            href="post-job.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Post Job</a
+          >
+          <a
+            href="applications.html"
+            class="text-cyan-blue hover:text-vivid-sky-blue"
+            >Applications</a
+          >
+        </nav>
+        <div class="flex items-center space-x-2">
+          <button
+            class="bg-white border border-cyan-blue text-cyan-blue px-4 py-2 rounded hover:bg-azure-blue hover:text-white md:block hidden"
+          >
+            <a href="signin.html">Sign Up</a>
+          </button>
+          <button
+            class="bg-electric-blue text-white px-4 py-2 rounded hover:bg-azure-blue"
+          >
+            <a href="login.html">Sign In</a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+      <section class="mb-8">
+        <h1 class="text-3xl font-bold text-midnight-blue mb-4">Schedule Interview</h1>
+        <nav class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm">
+            <li>
+              <a href="applications.html" class="text-cyan-blue hover:text-vivid-sky-blue">Applications</a>
+            </li>
+            <li class="text-gray-500">/</li>
+            <li class="text-gray-700">Schedule Interview</li>
+          </ol>
+        </nav>
+      </section>
+
+      <section class="bg-white rounded-lg shadow-lg p-6">
+        <div id="interview-content">
+          <h2 id="interview-applicant" class="text-2xl font-semibold text-midnight-blue mb-4"></h2>
+          <p id="interview-job" class="text-gray-600 mb-4"></p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="interview-date" class="block text-midnight-blue font-semibold mb-2">Interview Date</label>
+              <input
+                type="date"
+                id="interview-date"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+                min="2025-06-26"
+              />
+            </div>
+            <div>
+              <label for="interview-time" class="block text-midnight-blue font-semibold mb-2">Interview Time</label>
+              <input
+                type="time"
+                id="interview-time"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-blue"
+              />
+            </div>
+          </div>
+          <div class="mt-6">
+            <button
+              class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+              id="schedule-interview-btn"
+            >
+              Schedule Interview
+            </button>
+            <button
+              class="bg-cyan-blue text-white px-4 py-2 rounded-lg hover:bg-vivid-sky-blue ml-2"
+              onclick="window.history.back()"
+            >
+              Back to Applications
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-midnight-blue text-white py-8 mt-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Jobseekers</h3>
+          <a
+            href="find-jobs.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Find Jobs</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="upload.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Upload Resume</a
+          >
+          <a
+            href="jobseeker-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Jobseeker Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">For Employers</h3>
+          <a
+            href="post-job.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Post a Job</a
+          >
+          <a
+            href="create-account.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Create a Free Account</a
+          >
+          <a
+            href="employer-support.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Employer Support</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">Company</h3>
+          <a
+            href="why-gigmitra.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Why GigMitra?</a
+          >
+          <a
+            href="blog.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Blog</a
+          >
+          <a
+            href="about.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >About GigMitra</a
+          >
+          <a
+            href="career.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Career</a
+          >
+          <a
+            href="contact-us.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Contact Us</a
+          >
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-white">
+            Helpful Resources
+          </h3>
+          <a
+            href="terms.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue mb-1"
+            >Terms & Conditions</a
+          >
+          <a
+            href="privacy.html"
+            class="block text-cyan-blue hover:text-vivid-sky-blue"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+          <img
+            src="images/gigmitra-logo.png"
+            alt="GigMitra Logo"
+            class="h-12 mb-2"
+          />
+          <p class="text-center md:text-left text-sm">
+            Bridging Hiring Gaps
+          </p>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 mt-6 pt-6 border-t border-gray-700">
+        <p class="text-center text-sm">
+          Copyright © 2025 GigMitra Pvt. Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const applicant = urlParams.get("applicant");
+        const job = urlParams.get("job");
+
+        // Update content with query parameters
+        if (applicant && job) {
+          document.getElementById("interview-applicant").textContent = `Interview for ${applicant}`;
+          document.getElementById("interview-job").textContent = `Applied for: ${job}`;
+
+          // Set minimum date to tomorrow (since current time is 02:30 PM on June 25, 2025)
+          const today = new Date();
+          const tomorrow = new Date(today);
+          tomorrow.setDate(tomorrow.getDate() + 1);
+          const minDate = tomorrow.toISOString().split("T")[0];
+          document.getElementById("interview-date").min = minDate;
+
+          // Handle schedule interview button
+          document.getElementById("schedule-interview-btn").addEventListener("click", function () {
+            const date = document.getElementById("interview-date").value;
+            const time = document.getElementById("interview-time").value;
+            if (date && time) {
+              alert(`Interview scheduled for ${applicant} on ${date} at ${time}.`);
+              window.history.back();
+            } else {
+              alert("Please select both date and time.");
+            }
+          });
+        } else {
+          document.getElementById("interview-content").innerHTML = "<p class='text-gray-700'>No interview data available. Please go back and try again.</p>";
+        }
+      });
+    </script>
+  </body>
+</html>
