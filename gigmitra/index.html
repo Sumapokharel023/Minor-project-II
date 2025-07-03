@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="font-sans bg-gray-50">
-    <header class="bg-midnight-blue border-b border-cyan-blue py-4">
+    <header class="bg-midnight-blue border-b border-cyan-blue py-4 relative">
       <div
         class="container mx-auto flex justify-between items-center px-4 md:px-0"
       >
@@ -20,6 +20,8 @@
           />
           <span class="text-2xl font-bold text-cyan-blue">GigMitra</span>
         </div>
+        
+        <!-- Desktop Navigation -->
         <nav class="hidden md:flex space-x-6">
           <a href="index.html" class="text-cyan-blue hover:text-vivid-sky-blue"
             >Find Jobs</a
@@ -45,9 +47,11 @@
             >Customer Service</a
           >
         </nav>
-        <div class="flex items-center space-x-2">
+        
+        <!-- Desktop Buttons -->
+        <div class="hidden md:flex items-center space-x-2">
           <button
-            class="bg-white border border-cyan-blue text-cyan-blue px-4 py-2 rounded hover:bg-azure-blue hover:text-white md:block hidden"
+            class="bg-white border border-cyan-blue text-cyan-blue px-4 py-2 rounded hover:bg-azure-blue hover:text-white"
           >
             <a href="signin.html">Sign Up</a>
           </button>
@@ -61,8 +65,45 @@
             class="text-cyan-blue hover:text-vivid-sky-blue ml-2"
             >For Employer</a
           >
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-cyan-blue hover:text-vivid-sky-blue focus:outline-none z-50 relative"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="md:hidden hidden fixed inset-0 bg-midnight-blue z-40">
+        <!-- Mobile Menu Header -->
+        <div class="flex justify-between items-center px-4 py-4 border-b border-cyan-blue">
+          <div class="flex items-center">
+            <img
+              src="images/gigmitra-logo.png"
+              alt="GigMitra Logo"
+              class="h-10 mr-2"
+            />
+            <span class="text-2xl font-bold text-cyan-blue">GigMitra</span>
+          </div>
           <button
-            class="md:hidden text-cyan-blue hover:text-vivid-sky-blue focus:outline-none"
+            id="mobile-menu-close"
+            class="text-cyan-blue hover:text-vivid-sky-blue focus:outline-none"
           >
             <svg
               class="h-6 w-6"
@@ -75,10 +116,58 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
+                d="M6 18L18 6M6 6l12 12"
               ></path>
             </svg>
           </button>
+        </div>
+        
+        <!-- Mobile Menu Content -->
+        <div class="px-4 py-6 overflow-y-auto h-full">
+          <nav class="flex flex-col space-y-6">
+            <a href="index.html" class="text-cyan-blue hover:text-vivid-sky-blue text-lg py-3 border-b border-gray-700 transition-colors"
+              >Find Jobs</a
+            >
+            <a
+              href="job_categories.html"
+              class="text-cyan-blue hover:text-vivid-sky-blue text-lg py-3 border-b border-gray-700 transition-colors"
+              >Job Categories</a
+            >
+            <a
+              href="feed.html"
+              class="text-cyan-blue hover:text-vivid-sky-blue text-lg py-3 border-b border-gray-700 transition-colors flex items-center"
+              >Feed
+              <span
+                class="bg-electric-blue text-white text-xs px-2 py-1 rounded ml-2"
+                >New</span
+              ></a
+            >
+            <a href="upload.html" class="text-cyan-blue hover:text-vivid-sky-blue text-lg py-3 border-b border-gray-700 transition-colors"
+              >Upload Resume</a
+            >
+            <a href="cs.html" class="text-cyan-blue hover:text-vivid-sky-blue text-lg py-3 border-b border-gray-700 transition-colors"
+              >Customer Service</a
+            >
+            <a
+              href="employer-dashboard.html"
+              class="text-cyan-blue hover:text-vivid-sky-blue text-lg py-3 border-b border-gray-700 transition-colors"
+              >For Employer</a
+            >
+          </nav>
+          
+          <!-- Mobile Buttons -->
+          <div class="flex flex-col space-y-4 mt-8">
+            <button
+              class="bg-white border border-cyan-blue text-cyan-blue px-6 py-3 rounded-lg hover:bg-azure-blue hover:text-white w-full transition-colors text-lg"
+            >
+              <a href="signin.html" class="block">Sign Up</a>
+            </button>
+            <button
+              class="bg-electric-blue text-white px-6 py-3 rounded-lg hover:bg-azure-blue w-full transition-colors text-lg"
+            >
+              <a href="login.html" class="block">Sign In</a>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -399,6 +488,8 @@
       </div>
     </footer>
 
+    <script src="js/script.js"></script>
     <script src="js/job_categories.js"></script>
   </body>
 </html>
+
