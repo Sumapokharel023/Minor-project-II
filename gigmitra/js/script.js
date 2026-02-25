@@ -53,24 +53,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+// Password visibility toggle
+window.togglePassword = function(inputId) {
+    const input = document.getElementById(inputId);
+    if (input) {
+        const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+        input.setAttribute('type', type);
+    }
+};
+
   // Mobile menu toggle functionality
   const mobileMenuButton = document.getElementById("mobile-menu-button");
   const mobileMenuClose = document.getElementById("mobile-menu-close");
   const mobileMenu = document.getElementById("mobile-menu");
   
-  function openMobileMenu() {
-    if (mobileMenu) {
-      mobileMenu.classList.remove("hidden");
-      document.body.style.overflow = "hidden"; // Prevent background scrolling
+  if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.remove('hidden');
+        });
+        
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        }
     }
-  }
-  
-  function closeMobileMenu() {
-    if (mobileMenu) {
-      mobileMenu.classList.add("hidden");
-      document.body.style.overflow = ""; // Restore background scrolling
-    }
-  }
   
   // Open mobile menu when hamburger button is clicked
   if (mobileMenuButton) {
